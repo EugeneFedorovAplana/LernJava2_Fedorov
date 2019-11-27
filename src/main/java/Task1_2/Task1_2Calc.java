@@ -1,26 +1,14 @@
-package Task2;
+package Task1_2;
 
 import java.util.Scanner;
 
-public class Task2Massiv {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Какое задание запустить 1 (калькулятор) или 2(массив) ? ");
-        int numbTask = scan.nextInt();
-        switch (numbTask){
-            case 1:
-                Calculate();
-                break;
-            case 2:
-                FindMass();
-                break;
-            default:
-                System.out.println("Не, так не подойдет, напиши в следующий раз 1 или 2");
-                break;
-        }
-    }
+public class Task1_2Calc {
 
-    public static void Calculate(){
+    /**
+     * Калькулятор, оперирующий дробными числами
+     * */
+
+    public static void main(String[] args) {
         double v1,v2;
         String t;
         Scanner scan = new Scanner(System.in);
@@ -46,22 +34,5 @@ public class Task2Massiv {
             /*выводится тогда,
             когда пользователь не ввел тип операции */
         }
-    }
-
-    public static void FindMass() {
-        String maxLengWord = "";
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Введи длинну массива: ");
-        int lenghtMass = scan.nextInt();
-        scan.nextLine();
-        String[] textMass = new String[lenghtMass];
-        for (int i = 0; i < lenghtMass; i++){
-            System.out.println("Введи значение "+ i + " элемента массива :");
-            textMass[i] = scan.nextLine();
-            if (textMass[i].length() > maxLengWord.length()){
-                maxLengWord = textMass[i];
-            }
-        }
-        System.out.println("Максимально длинное слово - " + maxLengWord);
     }
 }
