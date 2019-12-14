@@ -2,9 +2,9 @@ package Task4.job2.Sweet;
 
 public abstract class Sweetness {
 
-    private String name;
-    private double weight;
-    private double price;
+    private String name; //название
+    private double weight; //вес
+    private double price; //цена
 
     public Sweetness(String name, double weight, double price) {
         this.name = name;
