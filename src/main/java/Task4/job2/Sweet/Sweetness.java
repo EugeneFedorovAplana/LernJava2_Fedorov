@@ -6,6 +6,8 @@ public abstract class Sweetness {
     private double weight; //вес
     private double price; //цена
 
+    public Sweetness(){};
+
     public Sweetness(String name, double weight, double price) {
         this.name = name;
         this.weight = weight;

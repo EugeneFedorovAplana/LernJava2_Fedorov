@@ -4,6 +4,8 @@ public class KinderSurprise extends Sweetness {
 
     private String form; //форма сладости
 
+    public KinderSurprise() {}
+
     public KinderSurprise(String name, double weight, double price, String form) {
         super(name, weight, price);
         this.form = form;
@@ -19,6 +21,6 @@ public class KinderSurprise extends Sweetness {
 
     @Override
     public String toString() {
-        return "Cinder =  " + super.toString() + "form = " + form;
+        return "Cinder =  " + super.toString() + " form = " + form;
     }
 }
